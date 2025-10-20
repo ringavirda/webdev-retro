@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "Debug Demos-Basic",
+      "request": "launch",
+      "type": "msedge",
+      "url": "http://localhost:5500/demos-simple/doro-basic",
+      "webRoot": "${workspaceFolder}/demos-simple/doro-basic"
+    },
+    {
+      "name": "Debug Demos-Transpiler",
+      "request": "launch",
+      "type": "msedge",
+      "url": "http://localhost:5500/demos-simple/doro-transpiler/dist",
+      "webRoot": "${workspaceFolder}/demos-simple/doro-transpiler/dist",
+      "preLaunchTask": "Build Doro-Transpiler"
+    }
+  ]
+}
