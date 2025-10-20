@@ -26,18 +26,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: "babel-loader",
-      },
-      {
         test: /\.ts$/,
         exclude: /node_modules/,
         use: [
-          "babel-loader",
+          {
+            loader: "babel-loader",
+            options: {
+              configFile: path.resolve(__dirname, "babel.config.json"),
+            },
+          },
           {
             loader: "ts-loader",
-            options: { configFile: "configs/tsconfig.json" },
+            options: {
+              configFile: path.resolve(__dirname, "tsconfig.json"),
+            },
           },
         ],
       },

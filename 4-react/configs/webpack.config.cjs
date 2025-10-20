@@ -19,7 +19,13 @@ module.exports = {
   devtool: "source-map",
   optimization: {
     splitChunks: {
-      chunks: "all",
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all",
+        },
+      },
     },
   },
   module: {
