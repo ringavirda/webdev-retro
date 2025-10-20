@@ -14,11 +14,11 @@
   "tasks": [
     {
       "label": "Build Doro-Basic",
-      "command": ["cd demos-simple/doro-basic && yarn build"]
+      "command": ["cd demos-simple/0-basic && yarn build"]
     },
     {
       "label": "Build Doro-Transpiler",
-      "command": ["cd demos-simple/doro-transpiler && yarn build"]
+      "command": ["cd demos-simple/1-transpiler && yarn build"]
     }
   ]
 }
