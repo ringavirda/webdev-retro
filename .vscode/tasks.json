@@ -23,6 +23,12 @@
     {
       "label": "Build Doro-Bundler",
       "command": ["cd demos-simple/2-bundler && yarn build"]
+    },
+    {
+      "label": "Build Doro-Typescript",
+      "command": [
+        "cd demos-simple/3-typescript && yarn run lint && yarn format && yarn build"
+      ]
     }
   ]
 }

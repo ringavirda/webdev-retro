@@ -1,7 +1,7 @@
 {
   "configurations": [
     {
-      "name": "Debug Demos-Basic",
+      "name": "Debug Doro-Basic",
       "request": "launch",
       "type": "msedge",
       "url": "http://localhost:5500/demos-simple/0-basic/dist",
@@ -9,7 +9,7 @@
       "preLaunchTask": "Build Doro-Basic"
     },
     {
-      "name": "Debug Demos-Transpiler",
+      "name": "Debug Doro-Transpiler",
       "request": "launch",
       "type": "msedge",
       "url": "http://localhost:5500/demos-simple/1-transpiler/dist",
@@ -17,12 +17,20 @@
       "preLaunchTask": "Build Doro-Transpiler"
     },
     {
-      "name": "Debug Demos-Bundler",
+      "name": "Debug Doro-Bundler",
       "request": "launch",
       "type": "msedge",
       "url": "http://localhost:5500/demos-simple/2-bundler/dist",
       "webRoot": "${workspaceFolder}/demos-simple/2-bundler/dist",
       "preLaunchTask": "Build Doro-Bundler"
+    },
+    {
+      "name": "Debug Doro-Typescript",
+      "request": "launch",
+      "type": "msedge",
+      "url": "http://localhost:5500/demos-simple/3-typescript/dist",
+      "webRoot": "${workspaceFolder}/demos-simple/3-typescript/dist",
+      "preLaunchTask": "Build Doro-Typescript"
     }
   ]
 }
