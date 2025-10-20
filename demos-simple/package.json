@@ -2,6 +2,6 @@
   "name": "demos-simple",
   "packageManager": "yarn@4.9.2",
   "workspaces": [
-    "doro-*"
+    "[0-9]-*"
   ]
 }

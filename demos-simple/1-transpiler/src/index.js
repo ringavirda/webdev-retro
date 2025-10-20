@@ -3,7 +3,7 @@ const maxDoroCount = 4;
 
 const container = document.querySelector(".wrapper");
 
-async function loadImageAsync() {
+async function loadImage() {
   const img = await createImgElementAsync();
   imgs.push(img);
   if (imgs.length <= maxDoroCount) container.appendChild(img);

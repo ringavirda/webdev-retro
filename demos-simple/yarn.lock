@@ -1832,9 +1832,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"doro-basic@workspace:doro-basic":
+"doro-basic@workspace:0-basic":
   version: 0.0.0-use.local
-  resolution: "doro-basic@workspace:doro-basic"
+  resolution: "doro-basic@workspace:0-basic"
   dependencies:
     cpx: "npm:^1.5.0"
     mkdirp: "npm:^3.0.1"
@@ -1842,9 +1842,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"doro-transpiler@workspace:doro-transpiler":
+"doro-bundler@workspace:2-bundler":
   version: 0.0.0-use.local
-  resolution: "doro-transpiler@workspace:doro-transpiler"
+  resolution: "doro-bundler@workspace:2-bundler"
+  languageName: unknown
+  linkType: soft
+
+"doro-transpiler@workspace:1-transpiler":
+  version: 0.0.0-use.local
+  resolution: "doro-transpiler@workspace:1-transpiler"
   dependencies:
     "@babel/cli": "npm:^7.28.3"
     "@babel/core": "npm:^7.28.4"
