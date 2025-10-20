@@ -19,6 +19,10 @@
     {
       "label": "Build Doro-Transpiler",
       "command": ["cd demos-simple/1-transpiler && yarn build"]
+    },
+    {
+      "label": "Build Doro-Bundler",
+      "command": ["cd demos-simple/2-bundler && yarn build"]
     }
   ]
 }
