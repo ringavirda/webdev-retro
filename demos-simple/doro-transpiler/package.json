@@ -1,7 +1,7 @@
 {
   "name": "doro-transpiler",
   "scripts": {
-    "build": "rimraf dist && babel src -d dist && cpx '*.{html,css}' dist"
+    "build": "rimraf dist && babel src -d dist && cpx 'src/*.{html,css}' dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
