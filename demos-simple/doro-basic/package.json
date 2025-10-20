@@ -1,0 +1,11 @@
+{
+  "name": "doro-basic",
+  "scripts": {
+    "build": "rimraf dist && mkdirp dist && cpx 'src/*.{html,js,css}' dist"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^6.0.1"
+  }
+}

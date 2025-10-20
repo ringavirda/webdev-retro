@@ -1,6 +1,5 @@
 {
   "name": "doro-transpiler",
-  "packageManager": "yarn@4.9.2",
   "scripts": {
     "build": "rimraf dist && babel src -d dist && cpx 'src/*.{html,css}' dist"
   },
