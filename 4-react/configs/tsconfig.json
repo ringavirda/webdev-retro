@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "target": "esnext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "sourceMap": true,
+
+    "jsx": "preserve",
+
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["../src/**/*", "../*.ts"],
+  "exclude": ["../node_modules"]
+}

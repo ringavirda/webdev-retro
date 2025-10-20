@@ -1,5 +1,5 @@
 {
-  "name": "demos-simple",
+  "name": "webdev-retro",
   "packageManager": "yarn@4.9.2",
   "workspaces": [
     "[0-9]-*"
