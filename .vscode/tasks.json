@@ -33,6 +33,10 @@
     {
       "label": "Build Doro-React",
       "command": ["cd 4-react && yarn run lint && yarn format && yarn build"]
+    },
+    {
+      "label": "Build Doro-App",
+      "command": ["cd 5-app && yarn build-all"]
     }
   ]
 }

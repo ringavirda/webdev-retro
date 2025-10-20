@@ -39,6 +39,13 @@
       "url": "http://localhost:5500/4-react/dist",
       "webRoot": "${workspaceFolder}/4-react/dist",
       "preLaunchTask": "Build Doro-React"
+    },
+    {
+      "name": "Debug Doro-App",
+      "request": "attach",
+      "type": "msedge",
+      "url": "http://localhost:5000",
+      "preLaunchTask": "Build Doro-App"
     }
   ]
 }

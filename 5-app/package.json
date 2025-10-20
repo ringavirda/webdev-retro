@@ -1,0 +1,12 @@
+{
+  "name": "doro-app",
+  "packageManager": "yarn@4.9.2",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "build-all": "yarn workspaces foreach -W -pt run build",
+    "serve": "node dist/main.bundle.js"
+  }
+}
