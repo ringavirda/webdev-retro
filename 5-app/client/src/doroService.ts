@@ -1,4 +1,4 @@
-const doroUrl = "https://i.ibb.co/Xxww9JT3/fallen-doro.png";
+const doroUrl = "http://localhost:5000/api/doro";
 type DoroCache = {
   blob: Blob | null;
   blobUrl: string;
