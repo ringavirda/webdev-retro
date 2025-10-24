@@ -1,0 +1,55 @@
+* {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 4rem;
+  padding: 2rem;
+  background-color: lightgray;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 0.7fr;
+  transition: all ease-in 1s;
+}
+
+.wrapper button {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: darkorange;
+  color: white;
+  font-size: xx-large;
+  font-family: Verdana;
+
+  outline: none;
+  border: none;
+}
+
+.wrapper button:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+
+.wrapper button:active {
+  background-color: darkorange;
+}
+
+.wrapper img {
+  visibility: hidden;
+  overflow: hidden;
+  width: 20rem;
+  scale: 0;
+  transition: all ease-in 0.5s;
+}
+
+.wrapper .loaded {
+  margin: 2rem;
+  visibility: visible;
+  scale: 1;
+}
