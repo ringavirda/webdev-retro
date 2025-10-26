@@ -6,7 +6,7 @@
     "server"
   ],
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf dist && mkdir dist",
     "build": "yarn clean && yarn workspaces foreach -W -pt run build",
     "serve": "node dist/main.bundle.js"
   },

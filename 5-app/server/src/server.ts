@@ -13,8 +13,8 @@ app.get("/api", (req: Request, res: Response) => {
   return res.status(200).json({ message: "Express server is running!" });
 });
 app.get("/api/doro", async (req: Request, res: Response) => {
-  const doro = loadDoroAsync();
-  return res.status(200).contentType("png").send(doro);
+  const doro = await loadDoroAsync();
+  return res.status(200).type("image/png").send(doro);
 });
 
 app.listen(port, hostname, () => {

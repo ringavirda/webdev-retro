@@ -3,7 +3,7 @@
   "scripts": {
     "lint": "eslint --config configs/eslint.config.mjs --fix src",
     "format": "prettier --config configs/.prettierrc --write src",
-    "build": "yarn lint && yarn format && webpack -c configs/webpack.config.cjs"
+    "build": "yarn lint && yarn format && webpack -c configs/webpack.config.cjs && cpx assets/* ../dist/assets"
   },
   "dependencies": {
     "express": "^5.1.0"
@@ -15,6 +15,7 @@
     "@eslint/js": "^9.38.0",
     "@types/express": "^5.0.3",
     "babel-loader": "^10.0.0",
+    "cpx": "^1.5.0",
     "eslint": "^9.38.0",
     "prettier": "^3.6.2",
     "ts-loader": "^9.5.4",

@@ -1,4 +1,4 @@
-import "../style.css";
+import "style.css";
 import { createImgElementAsync } from "./image";
 
 const container = document.querySelector<HTMLDivElement>(".wrapper");
