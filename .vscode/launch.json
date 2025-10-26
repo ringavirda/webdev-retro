@@ -1,51 +1,11 @@
 {
   "configurations": [
     {
-      "name": "Debug Doro-Basic",
+      "name": "Debug Doro-Web",
       "request": "launch",
       "type": "msedge",
-      "url": "http://localhost:5500/0-basic/dist",
-      "webRoot": "${workspaceFolder}/0-basic/dist",
-      "preLaunchTask": "Build Doro-Basic"
-    },
-    {
-      "name": "Debug Doro-Transpiler",
-      "request": "launch",
-      "type": "msedge",
-      "url": "http://localhost:5500/1-transpiler/dist",
-      "webRoot": "${workspaceFolder}/1-transpiler/dist",
-      "preLaunchTask": "Build Doro-Transpiler"
-    },
-    {
-      "name": "Debug Doro-Bundler",
-      "request": "launch",
-      "type": "msedge",
-      "url": "http://localhost:5500/2-bundler/dist",
-      "webRoot": "${workspaceFolder}/2-bundler/dist",
-      "preLaunchTask": "Build Doro-Bundler"
-    },
-    {
-      "name": "Debug Doro-Typescript",
-      "request": "launch",
-      "type": "msedge",
-      "url": "http://localhost:5500/3-typescript/dist",
-      "webRoot": "${workspaceFolder}/3-typescript/dist",
-      "preLaunchTask": "Build Doro-Typescript"
-    },
-    {
-      "name": "Debug Doro-React",
-      "request": "launch",
-      "type": "msedge",
-      "url": "http://localhost:5500/4-react/dist",
-      "webRoot": "${workspaceFolder}/4-react/dist",
-      "preLaunchTask": "Build Doro-React"
-    },
-    {
-      "name": "Debug Doro-App",
-      "request": "attach",
-      "type": "msedge",
-      "url": "http://localhost:5000",
-      "preLaunchTask": "Build Doro-App"
+      "url": "http://localhost:5000/",
+      "webRoot": "${workspaceFolder}"
     }
   ]
 }

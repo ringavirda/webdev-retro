@@ -13,28 +13,12 @@
   },
   "tasks": [
     {
-      "label": "Build Doro-Basic",
-      "command": ["cd 0-basic && yarn build"]
-    },
-    {
-      "label": "Build Doro-Transpiler",
-      "command": ["cd 1-transpiler && yarn build"]
-    },
-    {
-      "label": "Build Doro-Bundler",
-      "command": ["cd 2-bundler && yarn build"]
-    },
-    {
-      "label": "Build Doro-Typescript",
-      "command": ["cd 3-typescript && yarn build"]
-    },
-    {
-      "label": "Build Doro-React",
-      "command": ["cd 4-react && yarn build"]
-    },
-    {
-      "label": "Build Doro-App",
-      "command": ["cd 5-app && yarn build-all"]
+      "label": "Build All",
+      "command": ["yarn build-all"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
