@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "clean-all": "rimraf **/dist --glob",
-    "build-all": "yarn workspaces foreach -pt run build"
+    "build-all": "yarn workspaces foreach --all -pt run build"
   },
   "devDependencies": {
     "rimraf": "^6.0.1"
