@@ -1,9 +1,9 @@
 {
   "name": "doro-app-server",
   "scripts": {
-    "lint": "eslint --config configs/eslint.config.mjs",
-    "format": "prettier --config configs/.prettierrc",
-    "build": "webpack -c configs/webpack.config.cjs"
+    "lint": "eslint --config configs/eslint.config.mjs --fix src",
+    "format": "prettier --config configs/.prettierrc --write src",
+    "build": "yarn lint && yarn format && webpack -c configs/webpack.config.cjs"
   },
   "dependencies": {
     "express": "^5.1.0"

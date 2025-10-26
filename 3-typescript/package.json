@@ -1,9 +1,11 @@
 {
   "name": "doro-typescript",
   "scripts": {
-    "lint": "eslint --config configs/eslint.config.mjs src",
+    "clean": "rimraf dist && mkdirp dist",
+    "lint": "eslint --config configs/eslint.config.mjs --fix --quiet  src",
     "format": "prettier --config configs/.prettierrc src",
-    "build": "webpack -c configs/webpack.config.cjs"
+    "build": "yarn lint && yarn format && webpack -c configs/webpack.config.cjs --mode production",
+    "serve": "yarn lint && yarn format && webpack serve -c configs/webpack.config.cjs"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
@@ -15,12 +17,15 @@
     "eslint": "^9.38.0",
     "html-webpack-plugin": "^5.6.4",
     "mini-css-extract-plugin": "^2.9.4",
+    "mkdirp": "^3.0.1",
     "prettier": "^3.6.2",
     "raw-loader": "^4.0.2",
+    "rimraf": "^6.0.1",
     "ts-loader": "^9.5.4",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.1",
     "webpack": "^5.102.1",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   }
 }

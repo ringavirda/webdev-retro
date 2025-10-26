@@ -6,7 +6,11 @@
     "server"
   ],
   "scripts": {
-    "build-all": "yarn workspaces foreach -W -pt run build",
+    "clean": "rimraf dist",
+    "build": "yarn clean && yarn workspaces foreach -W -pt run build",
     "serve": "node dist/main.bundle.js"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
   }
 }

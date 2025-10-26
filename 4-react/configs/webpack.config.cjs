@@ -4,12 +4,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
-const entryPathJS = path.resolve(__dirname, "..", "index.ts");
+const entryPath = path.resolve(__dirname, "..", "index.ts");
 const outputPath = path.resolve(__dirname, "..", "dist");
 
 module.exports = {
   mode: "development",
-  entry: entryPathJS,
+  entry: entryPath,
   target: "web",
   output: {
     path: outputPath,
@@ -17,6 +17,13 @@ module.exports = {
     clean: true,
   },
   devtool: "source-map",
+  devServer: {
+    static: {
+      directory: outputPath,
+    },
+    compress: true,
+    port: 5000,
+  },
   optimization: {
     splitChunks: {
       cacheGroups: {
@@ -55,16 +62,13 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".json"],
-    alias: {
-      react: path.resolve(__dirname, "..", "./node_modules/react"),
-    },
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: "[name].bundle.css",
     }),
   ],
 };

@@ -2,23 +2,24 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
-const entryPathJS = path.join(__dirname, "src", "app.js");
+const entryPath = path.join(__dirname, "src", "app.js");
 const outputPath = path.join(__dirname, "dist");
 
 module.exports = {
   mode: "development",
-  entry: entryPathJS,
-  target: "es5",
+  entry: entryPath,
+  target: "web",
   output: {
     path: outputPath,
     filename: "[name].bundle.js",
     clean: true,
-    chunkFormat: "commonjs",
   },
-  optimization: {
-    splitChunks: {
-      chunks: "all",
+  devServer: {
+    static: {
+      directory: outputPath,
     },
+    compress: true,
+    port: 5000,
   },
   module: {
     rules: [
@@ -41,7 +42,7 @@ module.exports = {
       template: "index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: "[name].bundle.css",
     }),
   ],
 };

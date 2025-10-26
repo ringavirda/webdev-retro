@@ -3,5 +3,12 @@
   "packageManager": "yarn@4.9.2",
   "workspaces": [
     "[0-9]-*"
-  ]
+  ],
+  "scripts": {
+    "clean-all": "rimraf **/dist --glob",
+    "build-all": "yarn workspaces foreach -pt run build"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
 }

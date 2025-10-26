@@ -26,13 +26,11 @@
     },
     {
       "label": "Build Doro-Typescript",
-      "command": [
-        "cd 3-typescript && yarn run lint && yarn format && yarn build"
-      ]
+      "command": ["cd 3-typescript && yarn build"]
     },
     {
       "label": "Build Doro-React",
-      "command": ["cd 4-react && yarn run lint && yarn format && yarn build"]
+      "command": ["cd 4-react && yarn build"]
     },
     {
       "label": "Build Doro-App",
